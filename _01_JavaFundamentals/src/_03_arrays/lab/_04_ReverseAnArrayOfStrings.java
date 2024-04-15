@@ -23,5 +23,4 @@ public class _04_ReverseAnArrayOfStrings {
 		String reversedArr = String.join(" ", charArr);
 		System.out.println(reversedArr);
 	}
-
 }
