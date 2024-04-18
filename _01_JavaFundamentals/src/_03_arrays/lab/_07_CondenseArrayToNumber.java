@@ -20,7 +20,7 @@ public class _07_CondenseArrayToNumber {
 			for (int j = 0; j < arrLastIndex - i; j++) {
 				condensed[j] = numbers[j] + numbers[j + 1];
 			}
-			
+
 			numbers = condensed;
 		}
 
