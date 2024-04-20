@@ -1,10 +1,12 @@
 package _04_methods.exercise;
 
+import java.util.Scanner;
+
 public class Demo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner scanner = new Scanner(System.in);
+		
+		scanner.close();
 	}
-
 }
