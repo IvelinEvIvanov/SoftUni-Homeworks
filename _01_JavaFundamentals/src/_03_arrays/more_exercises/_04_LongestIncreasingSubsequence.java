@@ -43,6 +43,7 @@ public class _04_LongestIncreasingSubsequence {
 			currentIndex--;
 			lastIndex = previous[lastIndex];
 		}
+		
 		for (int print = 0; print < lis.length; print++) {
 			System.out.print(lis[print] + " ");
 		}
