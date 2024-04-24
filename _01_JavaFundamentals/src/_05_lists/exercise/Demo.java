@@ -14,25 +14,6 @@ public class Demo {
 										.map(Integer::parseInt)
 										.collect(Collectors.toList());
 
-		while (true) {
-			String line = scanner.nextLine();
-			if (line.equals("end")) {
-				break;
-			}
-
-			String[] tokens = line.split("\\s+");
-
-			switch (tokens[0]) {
-			case "":
-
-				break;
-
-			default:
-				break;
-			}
-		}
-
-		scanner.close();
 		
 		System.out.println(numbers	.toString()
 									.replaceAll("[\\[\\],]", ""));
