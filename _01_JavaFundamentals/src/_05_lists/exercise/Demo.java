@@ -13,6 +13,8 @@ public class Demo {
 														.split(" "))
 										.map(Integer::parseInt)
 										.collect(Collectors.toList());
+		
+		scanner.close();
 
 		
 		System.out.println(numbers	.toString()

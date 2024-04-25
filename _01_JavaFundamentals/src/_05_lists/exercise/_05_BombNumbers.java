@@ -24,13 +24,13 @@ public class _05_BombNumbers {
 				break;
 			}
 
-			for (int left = specialNumberIndex; left >= (specialNumberIndex - power) && (left >= 0); left--) {
-				numbers.set(left, -1);
+			for (int iLeft = specialNumberIndex; iLeft >= (specialNumberIndex - power) && (iLeft >= 0); iLeft--) {
+				numbers.set(iLeft, -1);
 			}
 
-			for (int right = specialNumberIndex; right <= (specialNumberIndex + power)
-					&& (right <= numbers.size() - 1); right++) {
-				numbers.set(right, -1);
+			for (int iRight = specialNumberIndex; iRight <= (specialNumberIndex + power)
+					&& (iRight <= numbers.size() - 1); iRight++) {
+				numbers.set(iRight, -1);
 			}
 		}
 
