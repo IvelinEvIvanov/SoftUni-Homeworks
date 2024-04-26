@@ -91,6 +91,8 @@ public class _08_AnonymousThreat {
 			}
 		}
 
+		scanner.close();
+		
 		System.out.println(stringList	.toString()
 										.replaceAll("[\\[\\],]", ""));
 	}
