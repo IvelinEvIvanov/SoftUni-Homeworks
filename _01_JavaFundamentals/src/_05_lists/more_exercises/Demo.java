@@ -1,4 +1,4 @@
-package _05_lists.exercise;
+package _05_lists.more_exercises;
 
 import java.util.Arrays;
 import java.util.List;

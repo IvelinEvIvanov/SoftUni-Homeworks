@@ -68,12 +68,12 @@ public class _10_SoftUniCoursePlanning {
 					courseSchedule.set(lessonTitleTwoIndex, lessonTitleOne);
 
 					if (hasLessonTitleOneExecise) {
-						courseSchedule.remove(lessonTitleOneIndex+1);
+						courseSchedule.remove(lessonTitleOneIndex + 1);
 						courseSchedule.add(lessonTitleTwoIndex + 1, lessonTitleOne + EXERCISE);
 					}
 
 					if (hasLessonTitleTwoExecise) {
-						courseSchedule.remove(lessonTitleTwoIndex+1);
+						courseSchedule.remove(lessonTitleTwoIndex + 1);
 						courseSchedule.add(lessonTitleOneIndex + 1, lessonTitleTwo + EXERCISE);
 					}
 				}
