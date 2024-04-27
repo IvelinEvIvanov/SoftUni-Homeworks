@@ -35,7 +35,7 @@ public class _02_CarRace {
 
 	private static double calculateTime(List<Integer> numbers, double carTime, int index) {
 		if (numbers.get(index) == 0) {
-			carTime = (carTime - (carTime * 0.2));
+			carTime = carTime - (carTime * 0.2);
 		}
 
 		carTime += numbers.get(index);
