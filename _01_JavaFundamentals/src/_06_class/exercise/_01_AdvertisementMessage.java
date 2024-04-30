@@ -44,5 +44,4 @@ public class _01_AdvertisementMessage {
 
 		System.out.println(result);
 	}
-
 }
