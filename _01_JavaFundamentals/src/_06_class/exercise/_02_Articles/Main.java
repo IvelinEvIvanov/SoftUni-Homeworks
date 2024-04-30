@@ -14,7 +14,11 @@ public class Main {
 											.collect(Collectors.toList());
 
 		int n = Integer.parseInt(scanner.nextLine());
-		Article article = new Article(inputTokens.get(0), inputTokens.get(1), inputTokens.get(2));
+		String title = inputTokens.get(0);
+		String content = inputTokens.get(1);
+		String author = inputTokens.get(2);
+
+		Article article = new Article(title, content, author);
 
 		for (int i = 0; i < n; i++) {
 			String[] tokens = scanner	.nextLine()
@@ -22,15 +26,18 @@ public class Main {
 
 			switch (tokens[0]) {
 			case "Edit":
-				article.edit(tokens[1]);
+				content = tokens[1];
+				article.edit(content);
 				break;
 
 			case "ChangeAuthor":
-				article.changeAuthor(tokens[1]);
+				author = tokens[1];
+				article.changeAuthor(author);
 				break;
 
 			case "Rename":
-				article.rename(tokens[1]);
+				title = tokens[1];
+				article.rename(title);
 				break;
 			}
 		}
