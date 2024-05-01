@@ -40,13 +40,13 @@ public class Main {
 			break;
 
 		case "content":
-			Collections.sort(articles, (t1, t2) -> t1	.getContent()
-														.compareTo(t2.getContent()));
+			Collections.sort(articles, (c1, c2) -> c1	.getContent()
+														.compareTo(c2.getContent()));
 			break;
 
 		case "author":
-			Collections.sort(articles, (t1, t2) -> t1	.getAuthor()
-														.compareTo(t2.getAuthor()));
+			Collections.sort(articles, (a1, a2) -> a1	.getAuthor()
+														.compareTo(a2.getAuthor()));
 			break;
 		}
 
