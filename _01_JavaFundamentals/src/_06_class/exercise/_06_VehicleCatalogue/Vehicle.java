@@ -56,12 +56,8 @@ public class Vehicle {
 		int sum = 0;
 
 		for (Vehicle vehicle : vehiles) {
-			if (type.equals("car") && vehicle	.getType()
-												.equals("car")) {
-				sum += vehicle.getHorsepower();
-
-			} else if (type.equals("truck") && vehicle	.getType()
-														.equals("truck")) {
+			if (vehicle	.getType()
+						.equals(type)) {
 				sum += vehicle.getHorsepower();
 			}
 		}
@@ -73,12 +69,8 @@ public class Vehicle {
 		int count = 0;
 
 		for (Vehicle vehicle : vehiles) {
-			if (type.equals("car") && vehicle	.getType()
-												.equals("car")) {
-				count++;
-
-			} else if (type.equals("truck") && vehicle	.getType()
-														.equals("truck")) {
+			if (vehicle	.getType()
+						.equals(type)) {
 				count++;
 			}
 		}
