@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class Main {
@@ -81,19 +82,19 @@ public class Main {
 			}
 		};
 
-		List<Map.Entry<String, Double>> entries = new ArrayList<>(averageSalaries.entrySet());
-		entries.sort(Map.Entry.comparingByValue(cmpAverageSalary));
+		List<Entry<String, Double>> entries = new ArrayList<>(averageSalaries.entrySet());
+		entries.sort(Entry.comparingByValue(cmpAverageSalary));
 
 		Map<String, Double> sortedMap = new LinkedHashMap<>();
 
-		for (Map.Entry<String, Double> entry : entries) {
+		for (Entry<String, Double> entry : entries) {
 			sortedMap.put(entry.getKey(), entry.getValue());
 		}
 
-		Iterator<Map.Entry<String, Double>> itr = sortedMap	.entrySet()
-															.iterator();
+		Iterator<Entry<String, Double>> itr = sortedMap	.entrySet()
+														.iterator();
 
-		Map.Entry<String, Double> highestAverageSalaryDepartment = itr.next();
+		Entry<String, Double> highestAverageSalaryDepartment = itr.next();
 		theDepartment.printDepartment(highestAverageSalaryDepartment);
 	}
 }
