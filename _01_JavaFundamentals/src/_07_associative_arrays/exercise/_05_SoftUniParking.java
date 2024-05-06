@@ -2,7 +2,7 @@ package _07_associative_arrays.exercise;
 
 import java.util.*;
 
-public class _5_SoftUniParking {
+public class _05_SoftUniParking {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = Integer.parseInt(scanner.nextLine());

@@ -2,7 +2,7 @@ package _07_associative_arrays.exercise;
 
 import java.util.*;
 
-public class _8_CompanyUsers {
+public class _08_CompanyUsers {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 

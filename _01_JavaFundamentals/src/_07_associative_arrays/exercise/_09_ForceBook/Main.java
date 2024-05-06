@@ -10,7 +10,6 @@ import java.util.stream.Stream;
 
 public class Main {
 
-	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
@@ -81,7 +80,7 @@ public class Main {
 
 																return result;
 															});
-		
+
 		sorted.forEach(entry -> {
 
 			// Sort Users by name
@@ -95,6 +94,5 @@ public class Main {
 										.toString());
 			}
 		});
-
 	}
 }
