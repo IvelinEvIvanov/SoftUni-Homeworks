@@ -1,7 +1,6 @@
 package _07_associative_arrays.exercise._09_ForceBook;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;

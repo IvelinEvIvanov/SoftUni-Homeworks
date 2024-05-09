@@ -23,6 +23,8 @@ public class Main {
 			listPerson.add(person);
 		}
 
+		scanner.close();
+
 		listPerson = listPerson	.stream()
 								.filter(p -> p.getAge() > 30)
 								.collect(Collectors.toList());

@@ -53,6 +53,8 @@ public class _1_Ranking {
 			input = scanner.nextLine();
 		}
 
+		scanner.close();
+
 		int totalPoints = 0;
 		for (Map.Entry<String, LinkedHashMap<String, Integer>> entry : users.entrySet()) {
 			int sum = entry	.getValue()

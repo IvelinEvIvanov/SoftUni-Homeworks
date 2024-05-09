@@ -30,8 +30,9 @@ public class _2_Judge {
 									.put(username, points);
 					}
 				} else {
-					Integer cuurentPoint = contestMap	.get(contest)
-														.get(username);
+					contestMap	.get(contest)
+								.get(username);
+
 					contestMap	.get(contest)
 								.put(username, points);
 				}
@@ -39,6 +40,8 @@ public class _2_Judge {
 
 			input = scanner.nextLine();
 		}
+
+		scanner.close();
 
 		Comparator<Entry<String, Integer>> comparator = (o1, o2) -> {
 			int n = o2	.getValue()
