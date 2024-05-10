@@ -32,4 +32,21 @@ public class Student {
 	public void addSubmission(String programLanguage, Integer points) {
 		this.submissions.add(new Submission(programLanguage, points));
 	}
+
+	public Integer getMaxPoint() {
+		Integer max = 0;
+		for (Submission submission : submissions) {
+			if (max < submission.getPoints()) {
+				max = submission.getPoints();
+			}
+		}
+		return max;
+	}
+
+	@Override
+	public String toString() {
+		Integer maxPoint = this.getMaxPoint();
+		return String.format("%s | %d", name, maxPoint);
+	}
+
 }
